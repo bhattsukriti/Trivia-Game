@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮Trivia Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Game 🎮</h1>
+    <!-- Game Setup Section -->
+    <section id="setup">
+        <h1 id="title">⚔️Trivia Battle⚔️</h1>
+        <h2>👤Player 1:</h2>
+        <div><input type="text" id="p1-name" placeholder="Player 1 Name"></div>
+        <h2>👥Player 2:</h2>
+        <div><input type="text" id="p2-name" placeholder="Player 2 Name"></div>
+        <button id="start-btn">Start Game</button>
+    </section>
+
+    <div id="scores" style="display: none;">
+        Player 1: <span id="p1-score">0</span> | Player 2: <span id="p2-score">0</span>
+    </div>
+
+    <!-- Category Selection Section -->
+    <section id="category" style="display: none;">
+        <h2>📊Select Category</h2>
+        <select id="category-select">
+            <option value="" disabled selected>Select a category</option>
+            <option value="general">music</option>
+            <option value="science">sport_and_leisure</option>
+            <option value="history">film_and_tv</option>
+            <option value="history">arts_and_literature</option>
+            <option value="history">History</option>
+            <option value="history">society_and_culture</option>
+            <option value="history">science</option>
+            <option value="history">geography</option>
+        </select>
+        <button id="category-btn">Selected</button>
+    </section>
+
+    <!-- Question Section -->
+    <section id="quiz">
+        <h2 id="current-player"></h2>
+        <h3 id="question"></h3>
+        <div id="answers">
+            <button class="answer-btn"></button>
+            <button class="answer-btn"></button>
+            <button class="answer-btn"></button>
+            <button class="answer-btn"></button>
+        </div>
+        <div id="feedback"></div>
+    </section>
+
+    <!-- Game Result Section -->
+    <section id="result">
+        <h2>🔚Game Over</h2>
+        <p id="final-score"></p>
+        <button id="restart-btn">⟳Restart</button>
+    </section>
+
+</body>
+    <script src="./app.js"></script>
+</html>
