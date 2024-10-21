@@ -1,4 +1,4 @@
-addEventListener('DOMContentdocumentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     const playBtn = document.getElementById('start-btn');
     const chooseBtn = document.getElementById('category-btn');
     const questionArea = document.getElementById('quiz');
