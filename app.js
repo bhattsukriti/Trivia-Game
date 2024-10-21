@@ -57,9 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function setupAnswerChoices(currentQuestion) {
-        // let Question = Questions[questionIndex];
-        // questionText.textContent = Question.question.text;
-
         // copy of answer
         let Choices = currentQuestion.incorrectAnswers.slice();
         Choices.push(currentQuestion.correctAnswer);
@@ -134,7 +131,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateCurrentPlayer() {
         playerTurn.textContent = `Current Player: Player ${player}`
-        // player= player==1?2:1
         if (player == 1) {
             player = 2
         } else {
